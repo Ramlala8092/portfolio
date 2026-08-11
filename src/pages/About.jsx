@@ -62,7 +62,7 @@ const About = () => {
               <div className="relative w-full h-full p-[5px] rounded-2xl bg-gradient-to-br from-purple-400 via-purple-600 to-pink-500 shadow-[0_0_50px_rgba(168,85,247,0.25)]">
 
                 <img
-                  src="/Myimage.png"
+                  src="Myimage.png"
                   alt="Ram Lala Kumar"
                   className="w-full h-full object-cover rounded-2xl border-4 border-[#111111]"
                 />

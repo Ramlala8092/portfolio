@@ -131,7 +131,7 @@ const Home = () => {
               >
 
                 <img
-                  src="/Myimage2.jpeg"
+                  src="Myimage2.jpeg"
                   alt="Ram Lala Kumar"
                   className="w-full h-full object-cover rounded-full border-4 border-[#111111]"
                 />

@@ -1,3 +1,6 @@
+
+
+
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
@@ -8,34 +11,39 @@ import Contact from "./pages/Contact";
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 
-const Router = createBrowserRouter([
+const Router = createBrowserRouter(
+  [
     {
-        path: "/",
-        element: <RootLayout />,
-        errorElement: <NotFoundPage />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-            },
-            {
-                path: "/about",
-                element: <About />,
-            },
-            {
-                path: "/skills",
-                element: <Skills />,
-            },
-            {
-                path: "/project",
-                element: <Projects />,
-            },
-            {
-                path: "/contact",
-                element: <Contact />,
-            }
-        ]
+      path: "/",
+      element: <RootLayout />,
+      errorElement: <NotFoundPage />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/skills",
+          element: <Skills />,
+        },
+        {
+          path: "/project",
+          element: <Projects />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        }
+      ]
     }
-]);
+  ],
+  {
+    basename: "/portfolio",
+  }
+);
 
-export default Router
+export default Router;
